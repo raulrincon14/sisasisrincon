@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Reactividad con VueJS</title>
+    <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+  </head>
+  <body>
+    <h1>Reactividad con Vue.js</h1>
+    <main id="app">
+      <h2>{{ message }}</h2>
+      <input type="text" v-model="message">
+    </main>
+
+    <script>
+    //  const input= document.querySelector('input'),
+    //  h2=document.querySelector("h2");
+    //  input.addEventListener('keyup',()=>h2.innerHTML=input.value)
+    new Vue({
+      el:'#app',
+      data:{
+        message:'Hola Mundo con VueJS'
+      }
+    })
+    </script>
+
+
+  </body>
+</html>
